@@ -61,3 +61,8 @@ func UUID() string {
 
 	return uuid.New().String()
 }
+
+//StartsWith method determines if the given string begins with the given value:
+func StartsWith(haystack, needles string) bool {
+	return strings.HasPrefix(haystack, needles)
+}
